@@ -22,8 +22,30 @@ export const usersApiSlice = createApi({
       }),
       invalidatesTags: ["Users"], // This mutation invalidates the Users tag.
     }),
+
+    // updateUser: builder.mutation({
+    //   query: (id, newUser) => ({
+    //     url: `users/${id}`,
+    //     method: "PUT",
+    //     body: newUser,
+    //   }),
+    //   invalidatesTags: ["Users"],
+    // }),
+
+    // deleteUser: builder.mutation({
+    //   query: (id) => ({
+    //     url: `users/${id}`,
+    //     method: "DELETE",
+    //   }),
+    //   invalidatesTags: ["Users"],
+    // }),
   }),
 });
 
 // Exports a hook for using the query and Mutations in your components
-export const { useGetUsersQuery, useCreateUserMutation } = usersApiSlice;
+export const {
+  useGetUsersQuery,
+  useCreateUserMutation,
+  // useUpdateUserMutation,
+  // useDeleteUserMutation,
+} = usersApiSlice;
