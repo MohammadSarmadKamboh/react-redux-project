@@ -1,7 +1,7 @@
 import NavBar from "./components/NavBar";
 import Comments from "./views/Comments";
 import Users from "./views/Users";
-import Posts from "./views/Posts";
+import Form from "./views/Form";
 import Home from "./views/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/users" element={<Users />} />
-          <Route path="/posts" element={<Posts />} />
+          <Route path="/form" element={<Form />} />
           <Route path="/comments" element={<Comments />} />
         </Routes>
       </BrowserRouter>

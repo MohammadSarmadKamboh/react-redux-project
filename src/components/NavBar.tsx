@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const navLinks = [
   { name: "Home", link: "/" },
   { name: "Users", link: "/users" },
-  { name: "Posts", link: "/posts" },
+  { name: "Form", link: "/form" },
   { name: "Comments", link: "/comments" },
 ];
 
@@ -15,7 +15,7 @@ const NavBar = () => {
           <Link
             to={item.link}
             key={index}
-            className="hover:scale-110 transition-transform active:text-red-400 focus:underline focus:underline-offset-[5px] ">
+            className="hover:scale-110 will-change-transform transition-transform focus:text-red-500 focus:underline focus:underline-offset-[5px] ">
             {item.name}
           </Link>
         );
